@@ -29,7 +29,6 @@ our $VERSION = '0.0.1';
 
 Quick summary of what the module does.
 
-    # log server
     use Net::IP::ACL;
 
     my $my_network = new Net::IP::ACL::Entry(
@@ -121,39 +120,11 @@ sub _get_acl {
     }
 }
 
-
-
 =head1 SUPPORT
 
 You can find documentation for this module with the perldoc command.
 
     perldoc Net::IP::ACL
-
-You can also look for information at:
-
-=over 4
-
-=item * RT: CPAN's request tracker (report bugs here)
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Net-IP-ACL>
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/Net-IP-ACL>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Net-IP-ACL>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/Net-IP-ACL/>
-
-=back
-
-
-=head1 ACKNOWLEDGEMENTS
-
 
 =head1 LICENSE AND COPYRIGHT
 
@@ -194,7 +165,6 @@ YOUR LOCAL LAW. UNLESS REQUIRED BY LAW, NO COPYRIGHT HOLDER OR
 CONTRIBUTOR WILL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR
 CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
 
 =cut
 
