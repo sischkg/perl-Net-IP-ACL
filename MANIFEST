@@ -1,0 +1,16 @@
+Changes
+lib/Net/IP/ACL.pm
+lib/Net/IP/ACL.pm
+lib/Net/IP/ACL/Imp.pm
+lib/Net/IP/ACL/Exception.pm
+lib/Net/IP/ACL/Bit.pm
+lib/Net/IP/ACL/Entry.pm
+Makefile.PL
+MANIFEST			This list of files
+README
+t/00-load.t
+t/manifest.t
+t/pod-coverage.t
+t/pod.t
+t/10-acl.t
+
