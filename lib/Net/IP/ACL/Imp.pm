@@ -13,6 +13,33 @@ has '_bit_length' => ( isa      => 'Int',
 		       is       => 'ro',
 		       required => 1 );
 
+=head1 NAME
+
+Net::IP::ACL::Imp - Implementation of Access Control List.
+
+=head1 SYNOPSIS
+
+Quick summary of what the module does.
+
+    use Net::IP::ACL::Imp;
+
+    my $my_network = new Net::IP::ACL::Entry(
+        address => '172.16.10.0/24',
+        name    => 'my network',
+        value   => 1,
+    );
+
+    # make ACL for IPv4.
+    my $_acl_v4 = new Net::IP::ACL::Imp( _bit_length => 32 );
+    $_acl_v4->add( $my_network );
+    $_acl_v4->add( $group_network );
+    $_acl_v4->add( $my_host );
+
+    $_acl_v4->match( '10.0.0.1' );                  # unmatched, return undef.
+
+    $_acl_v4->match( '172.16.10.100' );             # matched, return $.
+
+    print $acl_entry3->name;                        # "my host"
 
 =head1 SUBROUTINES/METHODS
 
@@ -91,6 +118,12 @@ sub match {
     return $matched_acl_entry;
 }
 
+
+=head2 print_bits
+
+Print bit pattern to STDERR for debug.
+
+=cut
 
 sub print_bits {
     my $this = shift;
