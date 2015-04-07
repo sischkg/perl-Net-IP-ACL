@@ -23,7 +23,7 @@ Net::IP::ACL - ACL.
 
 =cut
 
-our $VERSION = '0.0.1';
+our $VERSION = '0.1.1';
 
 =head1 SYNOPSIS
 
