@@ -52,6 +52,12 @@ whether IP address $address is matched or not.
 If $address is matched, this method return matched ACLEntry.
 If not matched, this method return undef.
 
+## Install
+
+    $ perl Makefile.PL
+    $ make
+    $ sudo make install
+
 ## SUPPORT
 
 You can find documentation for this module with the perldoc command.
